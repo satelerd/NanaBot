@@ -1,2 +1,2 @@
 # NanaBot
-Un bot para mis abuelos
+Un bot para mis abuelos.
