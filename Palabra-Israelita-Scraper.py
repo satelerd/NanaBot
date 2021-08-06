@@ -4,6 +4,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+
 # Scraper
 main_page = urllib.request.urlopen("https://www.lapalabraisraelita.cl/")
 soup = BeautifulSoup(main_page, "html.parser")
@@ -21,10 +22,11 @@ for letter in article:
         continue
 donwload = "https://www.lapalabraisraelita.cl/backend/views/pdf/ediciones/" + article_code + ".pdf"
 
+
 # Mail
 from_m = "satelerd@gmail.com"   # MAIL DE DONDE SERA ENVIADO
-pwd_m = "5Ata5k00"              # CLAVE DEL MAIL
-to_m = "satelerd@gmail.com"     # MAIL HACIA DONDE SERA ENVIADO
+pwd_m = ""              # CLAVE DEL MAIL
+to_m = "albertoisrael@gmail.com"     # MAIL HACIA DONDE SERA ENVIADO
 message = f"""Hola Denisse! Soy NanaBot y te traigo la nueva revista de La Palabra Israelita.
 
 Solo debes apretar el siguiente link: {donwload}"""
