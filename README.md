@@ -1,2 +1,2 @@
 # NanaBot
-Un bot para mis abuelos
+Bot que envia revistas por mail a mis abuelos
